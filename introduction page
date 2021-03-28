@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+    </head>
+    <body style="background-color: burlywood;">
+     
+    <h1 style="text-align: center;"> How to cook for Kitchen Hazards</h1>
+    <h4 style="text-align: center;"> Welcome to a guide to not help you be kitchen hazards anymore </h4>
+   
+    <button onclick="myfunction()"> Massive Kitchen Hazards</button>
+    <button onclick="myfunction()"> Medium Kitchen Hazards</button>
+    <button onclick="myfunction()"> Midgit Kitchen Hazards</button>
+    <p style="font-family: fantasy;">
+    This cooking blog is for people that are not allowed in the kitchen because they are most likely to set it on fire. 
+    To help you get better at cooking and be more confident in the kitchen, and hopefully you start to enjoy it.
+
+    </p>
+        <script src="" async defer></script>
+        
+    </body>
+</html>
