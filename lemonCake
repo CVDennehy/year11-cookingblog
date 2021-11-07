@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body style="background-color: rgb(250, 193, 146);">
+       <h1 style="text-align: center;"> Lemon Cake</h1>
+       <h3 style="text-align: center;"> by Chelsea</h3>
+       <h4 style="font-family: fantasy;"> Ingredients for the cake:</h4>
+        <p>
+            120g  Butter, softened
+1 cup Standard Grade Flour (150g) <br>
+3 tsp Baking Powder <br>
+2/3 cup White Sugar (150g) <br>
+2 large eggs <br>
+1/4 cup Milk (60ml) <br>
+grated rind and juice of 1 lemon <br>
+        </p>
+       <h4 style="font-family: fantasy;"> Ingredients for the Glaze:</h4>
+       <p>
+        juice of 1 lemon <br>
+1/2 cup White Sugar (113g) <br>
+3-4 Tbsp boiling water (to dissolve sugar) <br>
+       </p>
+       <h4 style="font-family: fantasy;"> Method:</h4>
+       <p>
+           1. Preheat oven to 180˚C bake. Grease and line an 18cm square baking tin. <br>
+           2. Place all cake ingredients together in a mixer, in the order listed above, 
+           and mix until all the ingredients are mixed together. <br>
+           3. Pour mixture into prepared tin and bake for 20-25 minutes, insert a skewer into the centre and if it comes out clean. 
+           It is ready to be taken out of the oven. <br>
+           4. For topping - mix the lemon juice, Chelsea White Sugar and boiling water together to form a runny syrup.
+           Poke holes with the skewer into the cake. Spoon topping onto cake while hot. Leave to cool in tin. <br>
+       </p>
+       
+        <script src="" async defer></script>
+    </body>
+</html>
