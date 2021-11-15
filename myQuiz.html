@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div id="intro">
+            <h1> Welcome to the food Quiz</h1>
+            <h3 id="headerText"> What is your name?</h3>
+        
+        </div>
+        
+        <div id="greetingInput">
+            <input id="userName">
+            <button onclick="greeting()"> Submit</button>
+        </div>
+
+        <div id="quiz">
+            <h3 id="question">        </h3>
+            <br>
+            <div id="answerA" onclick="aFunction()">the cookies become crumbly</div>
+            <div id="answerB" onclick="bFunction()"> the pancakes stick to the pan</div>
+            <div id="answerC" onclick="cFunction()">  heavy cream</div>
+            <div id="answerD" onclick="dFunction()"> eggs</div>
+            <div id="answerE" onclick="eFunction()"> lemon cake does not need milk</div>
+            <div id="qn1Button" onclick="submitQn1()"> <button> Submit Qn1</button></div>
+            <div id="qn2Button" onclick="submitQn2()"> <button> Submit Qn2</button></div>
+            <div id="qn3Button" onclick="submitQn3()"> <button> Submit Qn3</button></div>
+            <div id="qn4Button" onclick="submitQn4()"> <button> Submit Qn4</button></div>
+            <div id="qn5Button" onclick="submitQn5()"> <button> Submit Qn5</button></div>
+        </div>
+
+
+        <style>
+            #intro { text-align: center; color: black;}
+body {background-color: rgb(233, 208, 240);}
+#greetingInput { text-align: center; color: black;}
+           #quiz {text-align: center; color: black;}
+            
+
+        </style>
+        <script >
+              let userName = document.querySelector("#userName");
+              let headerText = document.querySelector("#headerText");
+              let greetingInput = document.querySelector("#greetingInput");
+              let quiz = document.querySelector("#quiz");
+              let qn1Button = document.querySelector("#qn1Button");
+              let qn2Button = document.querySelector("#qn2Button");
+              let qn3Button = document.querySelector("#qn3Button");
+              let qn4Button = document.querySelector("#qn4Button");
+              let qn5Button = document.querySelector("#qn5Button");
+              let question = document.querySelector("#question");
+              let answerA = document.querySelector("#answerA");
+              let answerB = document.querySelector("#answerB");
+              let answerC = document.querySelector("#answerC");
+              let answerD = document.querySelector("#answerD");
+              let answerE = document.querySelector("#answerE");
+              let iterationNumber = 0;
+              let qnChoice =""
+              let score = 0;
+              
+              let questionList = [
+             " Qn1: What happens when you add too much flour to the cookies?",
+"Qn2: What happens if you don't add butter to the pan when you make pancakes?",
+"Qn3: Which dairy product is added to Chicken Marsala?",
+"Qn4:What do you add to baked pasta to make sure it doesn't fall apart?",
+"Qn5: Do you need to add milk to lemon cake?"
+              ]
+
+              quiz.style.display = "none";
+              qn1Button.style.display = "none";
+              qn2Button.style.display = "none";
+              qn3Button.style.display = "none";
+              qn4Button.style.display = "none";
+              qn5Button.style.display = "none";
+              
+              function greeting() {
+                  headerText.innerHTML=""
+                  headerText.innerHTML="Hello " + userName.value + ", welcome to the food quiz"
+                  greetingInput.style.display = "none"
+                  quiz.style.display = "block";
+                  question.innerHTML = questionList[iterationNumber];
+                  qn1Button.style.display = "block";
+              }
+
+              function aFunction() {
+                  answerA.style.color = "red";
+                  answerB.style.color = "black";
+                  answerC.style.color = "black";
+                  answerD.style.color = "black";
+                  answerE.style.color = "black";
+                  qnChoice ="a";
+              }
+              
+              function bFunction() {
+                  answerB.style.color = "red";
+                  answerA.style.color = "black";
+                  answerC.style.color = "black";
+                  answerD.style.color = "black";
+                  answerE.style.color = "black";
+                  qnChoice ="b";
+              }
+
+              function cFunction() {
+                  answerB.style.color = "black";
+                  answerA.style.color = "black";
+                  answerC.style.color = "red";
+                  answerD.style.color = "black";
+                  answerE.style.color = "black";
+                  qnChoice ="c";
+              }
+
+              function dFunction() {
+                  answerB.style.color = "black";
+                  answerA.style.color = "black";
+                  answerC.style.color = "black";
+                  answerD.style.color = "red";
+                  answerE.style.color = "black";
+                  qnChoice ="d";
+              }
+
+              function eFunction() {
+                  answerB.style.color = "black";
+                  answerA.style.color = "black";
+                  answerC.style.color = "black";
+                  answerD.style.color = "black";
+                  answerE.style.color = "red";
+                  qnChoice ="e";
+              }
+
+              function submitQn1() {
+                   if (qnChoice == "a") {
+                       score += 1;
+                   }
+                   iterationNumber += 1;
+                   question.innerHTML = questionList[iterationNumber];
+                   qn1Button.style.display = "none";
+                   qn2Button.style.display = "block";
+                  answerB.style.color = "black";
+                  answerA.style.color = "black";
+                  answerC.style.color = "black";
+                  answerD.style.color = "black";
+                  answerE.style.color = "black";
+              }
+              function submitQn2() {
+                   if (qnChoice == "b") {
+                       score += 1;
+                   }
+                   iterationNumber += 1;
+                   question.innerHTML = questionList[iterationNumber];
+                   qn2Button.style.display = "none";
+                   qn3Button.style.display = "block";
+                   answerB.style.color = "black";
+                  answerA.style.color = "black";
+                  answerC.style.color = "black";
+                  answerD.style.color = "black";
+                  answerE.style.color = "black";
+              }
+              function submitQn3() {
+                   if (qnChoice == "c") {
+                       score += 1;
+                   }
+                   iterationNumber += 1;
+                   question.innerHTML = questionList[iterationNumber];
+                   qn3Button.style.display = "none";
+                   qn4Button.style.display = "block";
+                   answerB.style.color = "black";
+                  answerA.style.color = "black";
+                  answerC.style.color = "black";
+                  answerD.style.color = "black";
+                  answerE.style.color = "black";
+              }
+              function submitQn4() {
+                   if (qnChoice == "d") {
+                       score += 1;
+                   }
+                   iterationNumber += 1;
+                   question.innerHTML = questionList[iterationNumber];
+                   qn4Button.style.display = "none";
+                   qn5Button.style.display = "block";
+                   answerB.style.color = "black";
+                  answerA.style.color = "black";
+                  answerC.style.color = "black";
+                  answerD.style.color = "black";
+                  answerE.style.color = "black";
+              }
+
+              function submitQn5() {
+                   if (qnChoice == "e") {
+                       score += 1;
+                   }
+                   iterationNumber += 1;
+                   headerText.innerHTML = "Your score is " + score;
+                   quiz.style.display = "none";
+                  
+              }
+
+
+        </script>
+    </body>
+</html>
